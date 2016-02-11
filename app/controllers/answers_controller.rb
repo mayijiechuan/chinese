@@ -21,6 +21,7 @@ class AnswersController < ApplicationController
 
   # GET /answers/1/edit
   def edit
+    @questions = Question.all
   end
 
   # POST /answers
