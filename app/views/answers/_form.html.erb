@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :question_id %><br>
-    <%= f.text_field :question_id %>
+    <%= f.select :question_id, @questions.pluck(:content, :id) %>
   </div>
   <div class="field">
     <%= f.label :content %><br>
