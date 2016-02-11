@@ -1,0 +1,15 @@
+<h1>中国語　単語</h1>
+
+<table>
+<% @questions.each do |question| %>
+  <tr>
+    <td><%= question.content %></td>
+    <td>
+      <ul>
+        <% question.answers.each do |answer| %>
+          <li><%= answer.id %>. <%= answer.content %></li>
+        <% end %>
+    </ul>
+    </tr>
+<% end %>
+</table>
